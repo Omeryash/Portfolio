@@ -312,11 +312,14 @@
                 <button class="filter-btn" data-filter="web">To-do-list</button>
                 <button class="filter-btn" data-filter="ml">Quiz App</button>
                 <button class="filter-btn" data-filter="app">Calculator</button>
+                <button class="filter-btn" data-filter="dashboard">HR Dashboard</button>
             </div>
             <div class="projects-grid">
                 <div class="project-card" data-category="web">
                     <div class="project-img">
-                        <img src="project.1.png" alt="Project 1">
+                        <img src="project.1.png" alt="Project 1" 
+                            style="cursor: pointer;"
+                            onclick="const img = this.cloneNode(true); img.style.maxWidth = '90vw'; img.style.maxHeight = '90vh'; img.style.objectFit = 'contain'; const div = document.createElement('div'); div.style.position = 'fixed'; div.style.top = '0'; div.style.left = '0'; div.style.width = '100%'; div.style.height = '100%'; div.style.backgroundColor = 'rgba(0,0,0,0.8)'; div.style.display = 'flex'; div.style.justifyContent = 'center'; div.style.alignItems = 'center'; div.style.zIndex = '1000'; const closeBtn = document.createElement('button'); closeBtn.innerHTML = '×'; closeBtn.style.position = 'absolute'; closeBtn.style.top = '20px'; closeBtn.style.right = '20px'; closeBtn.style.background = 'none'; closeBtn.style.border = 'none'; closeBtn.style.color = 'white'; closeBtn.style.fontSize = '30px'; closeBtn.style.cursor = 'pointer'; closeBtn.onclick = function(e){ e.stopPropagation(); document.body.removeChild(div)}; div.onclick = function(){document.body.removeChild(div)}; div.appendChild(closeBtn); div.appendChild(img); document.body.appendChild(div);">
                     </div>
                     <div class="project-content">
                         <h3>Todo List App</h3>
@@ -337,7 +340,8 @@
                 </div>
                 <div class="project-card" data-category="ml">
                     <div class="project-img">
-                        <img src="proj.2.png" alt="Project 2">
+                        <img src="proj.2.png" alt="Project 2"  style="cursor: pointer;"
+                            onclick="const img = this.cloneNode(true); img.style.maxWidth = '90vw'; img.style.maxHeight = '90vh'; img.style.objectFit = 'contain'; const div = document.createElement('div'); div.style.position = 'fixed'; div.style.top = '0'; div.style.left = '0'; div.style.width = '100%'; div.style.height = '100%'; div.style.backgroundColor = 'rgba(0,0,0,0.8)'; div.style.display = 'flex'; div.style.justifyContent = 'center'; div.style.alignItems = 'center'; div.style.zIndex = '1000'; const closeBtn = document.createElement('button'); closeBtn.innerHTML = '×'; closeBtn.style.position = 'absolute'; closeBtn.style.top = '20px'; closeBtn.style.right = '20px'; closeBtn.style.background = 'none'; closeBtn.style.border = 'none'; closeBtn.style.color = 'white'; closeBtn.style.fontSize = '30px'; closeBtn.style.cursor = 'pointer'; closeBtn.onclick = function(e){ e.stopPropagation(); document.body.removeChild(div)}; div.onclick = function(){document.body.removeChild(div)}; div.appendChild(closeBtn); div.appendChild(img); document.body.appendChild(div);">
                     </div>
                     <div class="project-content">
                         <h3>Quiz App</h3>
@@ -355,56 +359,59 @@
                             <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
                         </div> -->
 
-                        
+
                 </div>
-         
-            <div class="project-card" data-category="app">
-                <div class="project-img">
-                    <img src="Calculator.png" alt="Calculator App"
-                        style="width:300px; height: 200px; object-fit: cover;">
-                </div>
-                <div class="project-content">
-                    <h3>Calculator App</h3>
-                    <p>A simple and responsive calculator built using HTML, CSS, and JavaScript. It performs basic
-                        arithmetic
-                        operations like addition, subtraction, multiplication, and division.</p>
-                    <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+
+                <div class="project-card" data-category="app">
+                    <div class="project-img">
+                        <img src="Calculator.png" alt="Calculator App"
+                            style="  cursor: pointer;"
+                            onclick="const img = this.cloneNode(true); img.style.maxWidth = '90vw'; img.style.maxHeight = '90vh'; img.style.objectFit = 'contain'; const div = document.createElement('div'); div.style.position = 'fixed'; div.style.top = '0'; div.style.left = '0'; div.style.width = '100%'; div.style.height = '100%'; div.style.backgroundColor = 'rgba(0,0,0,0.8)'; div.style.display = 'flex'; div.style.justifyContent = 'center'; div.style.alignItems = 'center'; div.style.zIndex = '1000'; const closeBtn = document.createElement('button'); closeBtn.innerHTML = '×'; closeBtn.style.position = 'absolute'; closeBtn.style.top = '20px'; closeBtn.style.right = '20px'; closeBtn.style.background = 'none'; closeBtn.style.border = 'none'; closeBtn.style.color = 'white'; closeBtn.style.fontSize = '30px'; closeBtn.style.cursor = 'pointer'; closeBtn.onclick = function(e){ e.stopPropagation(); document.body.removeChild(div)}; div.onclick = function(){document.body.removeChild(div)}; div.appendChild(closeBtn); div.appendChild(img); document.body.appendChild(div);">
+                    </div>
+                    <div class="project-content">
+                        <h3>Calculator App</h3>
+                        <p>A simple and responsive calculator built using HTML, CSS, and JavaScript. It performs basic
+                            arithmetic
+                            operations like addition, subtraction, multiplication, and division.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- <div class="project-links">
+                <!-- <div class="project-links">
                             <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
                             <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
                         </div> -->
 
-                        <div class="project-card" data-category="dashboard">
-                            <div class="project-img">
-                                <img src="HR Dashboard.png" alt="HR Analytics Dashboard"
-                                    style="width:300px; height: 200px;  object-fit: cover;">
-                            </div>
-                            <div class="project-content">
-                                <h3>HR Analytics Dashboard</h3>
-                                <p>An interactive dashboard that visualizes HR metrics such as attrition rate, salary range, education,
-                                    job
-                                    roles, and more. Built for efficient data-driven decision-making in Human Resources.</p>
-                                <div class="project-tech">
-                                    <span>Power BI</span>
-                                    <span>Data Visualization</span>
-                                    <span>HR Analytics</span>
-                                </div>
-                            </div>   
-               
+                <div class="project-card" data-category="dashboard">
+                    <div class="project-img">
+                        <img src="HR Dashboard.png" alt="HR Analytics Dashboard"
+                            style="cursor: pointer;"
+                            onclick="const img = this.cloneNode(true); img.style.maxWidth = '90vw'; img.style.maxHeight = '90vh'; img.style.objectFit = 'contain'; const div = document.createElement('div'); div.style.position = 'fixed'; div.style.top = '0'; div.style.left = '0'; div.style.width = '100%'; div.style.height = '100%'; div.style.backgroundColor = 'rgba(0,0,0,0.8)'; div.style.display = 'flex'; div.style.justifyContent = 'center'; div.style.alignItems = 'center'; div.style.zIndex = '1000'; const closeBtn = document.createElement('button'); closeBtn.innerHTML = '×'; closeBtn.style.position = 'absolute'; closeBtn.style.top = '20px'; closeBtn.style.right = '20px'; closeBtn.style.background = 'none'; closeBtn.style.border = 'none'; closeBtn.style.color = 'white'; closeBtn.style.fontSize = '30px'; closeBtn.style.cursor = 'pointer'; closeBtn.onclick = function(e){ e.stopPropagation(); document.body.removeChild(div)}; div.onclick = function(){document.body.removeChild(div)}; div.appendChild(closeBtn); div.appendChild(img); document.body.appendChild(div);">
+                    </div>
+                    <div class="project-content">
+                        <h3>HR Analytics Dashboard</h3>
+                        <p>An interactive dashboard that visualizes HR metrics such as attrition rate, salary range,
+                            education,
+                            job
+                            roles, and more. Built for efficient data-driven decision-making in Human Resources.</p>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>Data Visualization</span>
+                            <span>HR Analytics</span>
                         </div>
                     </div>
+
+                </div>
+            </div>
         </div>
         </div>
 
- 
-        
+
+
 
 
 
