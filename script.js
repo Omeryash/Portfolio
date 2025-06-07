@@ -121,6 +121,8 @@ window.addEventListener('scroll', animateSkillBars);
 
 // Form Submission
 if (contactForm) {
+
+    const contactForm = document.getElementById("contact-form");
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
@@ -131,8 +133,8 @@ if (contactForm) {
         const message = document.getElementById('message').value;
         
         // Here you would typically send the form data to a server
-        // For now, we'll just log it and show an alert
-        console.log({ name, email, subject, message });
+        // Clear form fields after submission
+      
         
         // Show success message
         alert('Thank you for your message! I will get back to you soon.');
@@ -140,4 +142,6 @@ if (contactForm) {
         // Reset form
         contactForm.reset();
     });
+
+    
 }
